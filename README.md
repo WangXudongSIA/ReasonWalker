@@ -26,11 +26,11 @@ pip install -r requirements.txt
 
 3. Datasets
 
-The code expects files in this structure (examples of the R2R-CE dataset):
+The code expects files in this structure (examples of the Implicit IR2R-CE dataset):
 
 ```graphql
 data/datasets
-├─ RxR_VLNCE_v0
+├─ R2R_VLNCE
 |   ├─ train
 |   |    ├─ train_guide.json.gz
 |   |    ├─ train_guide_gt.json.gz
@@ -51,11 +51,11 @@ data/datasets
 |   ├─ text_features
 |   |    ├─ ...
 ```
-The `data/scene_datasets/mp3d` should place all the 3D scene datas of MP3D.
+The `data/scene_datasets/mp3d` should place all the 3D scene datas of [MP3D](https://niessner.github.io/Matterport/). The [Implicit IR2R-CE dataset](https://pan.baidu.com/s/1kC2jY3JOD2bc5Dd4S_-XvQ?pwd=5bvu)
 
 4. Multimodal Large Language Model
 
-Please dowload [Qwen2-7b] from `huggingface` and place it under the `model`.
+Please dowload [Qwen2-7b](https://huggingface.co/Qwen/Qwen2-7B) from `huggingface` and place it under the `model`.
 
 ## Run Code
 
@@ -85,4 +85,5 @@ CUDA_VISIBLE_DEVICES= 0, 1; python run.py \
 
 ### Acknowledgements
 
-This project is based on the [VLN-CE] and [IVLN-CE], our LLM is based on [Qwen2-7b]. We are grateful for all these good works!
+This project is based on the [VLN-CE](https://github.com/jacobkrantz/VLN-CE) and [IVLN-CE](https://github.com/jacobkrantz/IVLN-CE), our LLM is based on [Qwen2-7b](https://huggingface.co/Qwen/Qwen2-7B). We are grateful for all these good works!
+If you find our work inspiring or use our codebase in your research, please consider giving a star ⭐ and a citation.
